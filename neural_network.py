@@ -103,4 +103,4 @@ plt.show()
 for i, (output, mse) in enumerate(zip(outputs, mse_scores), 1):
     print(f'Layer {i}: {layer_names[i-1]}, MSE: {mse:.4f}')
 print(f'Composite function output, MSE: {mse_predictions:.4f}')
-print(f"Final R² score: {r2_predictions[i]:.4f}")
+print(f"Final R² score: {r2_predictions[-1]:.4f}") #`r2_predictions` is a list,  `i` is an index into the lists `o`utputs` and `mse_scores`, not into r2_predictions.
